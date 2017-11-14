@@ -1,4 +1,4 @@
-// File: hw5.3.cpp
+// File: hw2.4.cpp
 // Author(s): Jordan Giebas, Daniel Rojas Coy
 
 #include <iostream>
@@ -178,7 +178,7 @@ void binary_tree_delete_value(bt_node **ptop, int val) {
 	// Direction to move from previous to current 0 left, 1 right
 	bool direction = 0;
 
-	// Find node with value
+	// Find nodes with value 'val'
 	while (current) {
 		if (current->value == val) {
 			break;
@@ -343,7 +343,8 @@ int main()
 	cout << "top3 mean: " << binary_tree_mean(top3) << "\n";
 
 
-	/*
+	/* 
+	//Our tests
 	bt_node *top6 = nullptr;
 	binary_tree_insert_unique(&top6, 8);
 	binary_tree_insert_unique(&top6, 2);

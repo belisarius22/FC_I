@@ -152,7 +152,7 @@ int main()
 	put_rev_str_rc(hello);
 	cout << "\n\n";
 
-	cout << "We think the iterative one would be more intuitive except for the 'while' that needs to find the end of the array. If this part could be abstracted (for instance with a 'length_of_array(.)' function), then iterative would be more simple.\n";
+	cout << " d) We think the iterative one would be more intuitive except for the 'while' that needs to find the end of the array. If this part could be abstracted (for instance with a 'length_of_array(.)' function), then iterative would be more simple.\n";
 
 	return 0;
 }
