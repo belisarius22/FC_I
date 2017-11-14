@@ -1,5 +1,5 @@
 // File: hw2.3.cpp
-// Author(s): Jordan Giebas, Daniel Rojas
+// Author(s): Jordan Giebas, Daniel Rojas Coy 
 
 #include <iostream>
 using namespace std;

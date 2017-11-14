@@ -1,6 +1,6 @@
 
 // File: hw2.1.cpp
-// Author(s):
+// Author(s): Jordan Giebas, Daniel Rojas Coy
 
 #include <iostream>
 #include <iomanip>
