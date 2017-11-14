@@ -155,23 +155,30 @@ void clist_delete_dups(cl_node** p_cl)
 {
 
 	cl_node* temp = *p_cl;
-	
-	for (; temp; temp = temp->next) {
+
+	//for (; temp; temp = temp->next) {
+	while(temp){
 
 		if (!temp->next) {
 			break;
 		}
-
+		
 		if (temp->data == (temp->next)->data) {
 			cl_node* erase = temp->next;
 			temp->next = (temp->next)->next;
 			delete erase;
 			erase = 0;
 		}
-		// This won't work if there is an odd number of consecutive duplicate letters
+		// The while only advances if the consecutive node doesn't have the same info
+		// That way, it can handle cases where val is repeated 3 times, e.g. "Abbba"
+		else {
+			temp = temp->next;
+		}
+		
 	}
 
 }
+
 
 // Part g
 
@@ -262,7 +269,7 @@ int main()
 
 	//code for part (e)
 	cout << "_____PART E_____ \n\n";
-	cl_node *cl2 = mk_clist_from_Cstring("Mississippi");
+	cl_node *cl2 = mk_clist_from_Cstring("Mississipppi");
 	clist_display_to_cout(cl2); cout << '\n';    // Mississippi
 	cout << clist_count_char(cl2, 'i') << '\n';  // 4
 
